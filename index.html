@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Loom | Handmade Craft Studio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #faf5ed;
+      color: #563d30;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f3e6d5;
+    }
+    header h2 { margin: 0; letter-spacing: 2px; }
+    nav a {
+      color: #563d30;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    .hero {
+      text-align: center;
+      padding: 85px 20px;
+      background: linear-gradient(135deg, #ead3bd, #f8eee0);
+    }
+    .hero h1 { font-size: clamp(36px, 6vw, 62px); margin: 10px 0; }
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 550px;
+      margin: 15px auto 28px;
+    }
+    .btn {
+      display: inline-block;
+      background: #805740;
+      color: white;
+      padding: 13px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    section { padding: 55px 8%; text-align: center; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .product {
+      background: white;
+      padding: 25px 18px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px #563d3010;
+    }
+    .product .emoji { font-size: 52px; }
+    .product h3 { margin-bottom: 8px; }
+    .about { background: #f0e1d0; line-height: 1.8; }
+    .contact p { line-height: 1.8; }
+    footer {
+      background: #563d30;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+    @media (max-width: 520px) {
+      header { padding: 18px 5%; }
+      nav a { margin-left: 8px; font-size: 13px; }
+      .hero { padding: 65px 18px; }
+      section { padding: 42px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>little loom.</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#crafts">Crafts</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p>✿ A LITTLE WORLD OF CREATIVITY ✿</p>
+      <h1>Made by Hand,<br>Made with Heart.</h1>
+      <p>Discover beautiful handmade treasures,
+        thoughtful gifts and creative pieces
+        made with love.</p>
+      <a class="btn" href="#crafts">Explore Our Crafts</a>
+    </section>
+
+    <section id="crafts">
+      <p>MADE WITH LOVE ♡</p>
+      <h2>Our Handmade Collection</h2>
+      <p>Little things that make life more beautiful.</p>
+
+      <div class="products">
+        <article class="product">
+          <div class="emoji">🌸</div>
+          <h3>Crochet Flowers</h3>
+          <p>Handcrafted blooms that last forever.</p>
+        </article>
+        <article class="product">
+          <div class="emoji">📿</div>
+          <h3>Handmade Jewelry</h3>
+          <p>Little accessories with lots of personality.</p>
+        </article>
+        <article class="product">
+          <div class="emoji">🪴</div>
+          <h3>Painted Pots</h3>
+          <p>Colorful creations for your happy space.</p>
+        </article>
+        <article class="product">
+          <div class="emoji">💌</div>
+          <h3>Paper Crafts</h3>
+          <p>Special cards and gifts made by hand.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <p>OUR LITTLE STORY</p>
+      <h2>Creativity in Every Little Detail</h2>
+      <p>
+        Welcome to Little Loom, a cozy handmade craft studio
+        where imagination becomes something beautiful.
+        We believe every handmade piece carries a little
+        happiness, a personal touch and a story of its own.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's Create Something Beautiful!</h2>
+      <p>Have a gift idea or a custom craft in mind?</p>
+      <a class="btn"
+         href="mailto:hello@example.com?subject=Handmade%20Craft%20Enquiry">
+        Contact Our Studio
+      </a>
+      <p>Replace hello@example.com with your email address.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Little Loom ♡ Handmade with love.</p>
+    <p>© 2026 Little Loom Craft Studio</p>
+  </footer>
+</body>
+</html>
